@@ -1,0 +1,47 @@
+import pyautogui
+import pyperclip
+import time
+
+
+
+pyautogui.pause = 1
+
+pyautogui.hotkey('win', 'r')
+pasta = r'C:\Users\Dalton\Desktop\copiarecolar'
+pyperclip.copy (pasta)
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.press('enter')
+time.sleep(2)
+pyautogui.click(x=400, y=136)
+pyautogui.hotkey('delete')
+
+pyautogui.hotkey('win', 'r')
+nome = 'downloads'
+pyperclip.copy (nome)
+pyautogui.hotkey('ctrl', 'v')
+pyautogui.press('enter')
+time.sleep(2)
+pyautogui.click(x=514, y=190)
+time.sleep(2)
+pyautogui.hotkey('ctrl', 'c')
+
+pyautogui.hotkey('alt', 'tab')
+pyautogui.hotkey('ctrl', 'v')
+
+time.sleep(2)
+
+pyautogui.click(x=400, y=136)
+pyautogui.hotkey('F2')
+teste = 'teste'
+pyperclip.copy (teste)
+pyautogui.hotkey('ctrl', 'v')
+
+pyautogui.press('enter')
+
+time.sleep(1)
+
+pyautogui.hotkey('win', 'm')
+
+time.sleep(1)
+
+pyautogui.alert("Base atualizada",title="Alerta")
